@@ -36,3 +36,10 @@ Lust am Sprachpaket mitzuwirken und einen (zumindest kostenlosen) Github- und/od
 ¡Disfrute el paquete de idioma español! / Enjoy the Spanish Language Pack! / Viel Spaß mit dem spanischen Magento Sprachpaket!
 
 MaWoScha
+
+
+# Véase también / See also / Siehe auch
+* [German LocalePack es_AR](https://github.com/MaWoScha/German_LocalePack_es_AR)
+* [German LocalePack es_CL](https://github.com/MaWoScha/German_LocalePack_es_CL)
+* [German LocalePack es_CO](https://github.com/MaWoScha/German_LocalePack_es_CO)
+* [German LocalePack es_MX](https://github.com/MaWoScha/German_LocalePack_es_MX)
