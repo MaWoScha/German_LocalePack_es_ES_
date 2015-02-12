@@ -15,54 +15,54 @@
 
 <table>
     <thead>
-        <tr>
-            <th>Habido un fallo en la transacción de pago.</th>
-        </tr>
+    <tr>
+        <th>Habido un fallo en la transacción de pago.</th>
+    </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>
-                <p>
-                    <b>Razón</b><br />
-                    {{var reason}}
-                </p>
-                <p>
-                    <b>Tipo de caja</b><br />
-                    {{var checkoutType}}
-                </p>
-                <p>
-                    <b>Cliente:</b><br />
-                    <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
-                </p>
-                <p>
-                    <b>Artículos</b><br />
-                    {{var items}}
-                </p>
-                <p>
-                    <b>Total:</b><br />
-                    {{var total}}
-                </p>
-                <p>
-                    <b>Dirección de facturación:</b><br />
-                    {{var billingAddress.format('html')}}
-                </p>
-                <p>
-                    <b>Dirección de envío:</b><br />
-                    {{var shippingAddress.format('html')}}
-                </p>
-                <p>
-                    <b>Método de envío:</b><br />
-                    {{var shippingMethod}}
-                </p>
-                <p>
-                    <b>Método de pago:</b><br />
-                    {{var paymentMethod}}
-                </p>
-                <p>
-                    <b>Fecha y hora:</b><br />
-                    {{var dateAndTime}}
-                </p>
-            </td>
-        </tr>
+    <tr>
+        <td>
+            <p>
+                <b>Razón:</b><br />
+                {{var reason}}
+            </p>
+            <p>
+                <b>Tipo de caja:</b><br />
+                {{var checkoutType}}
+            </p>
+            <p>
+                <b>Cliente:</b><br />
+                <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
+            </p>
+            <p>
+                <b>Artículos:</b><br />
+                {{var items}}
+            </p>
+            <p>
+                <b>Total:</b><br />
+                {{var total}}
+            </p>
+            <p>
+                <b>Dirección de facturación:</b><br />
+                {{var billingAddress.format('html')}}
+            </p>
+            <p>
+                <b>Dirección de envío:</b><br />
+                {{var shippingAddress.format('html')}}
+            </p>
+            <p>
+                <b>Método de envío:</b><br />
+                {{var shippingMethod}}
+            </p>
+            <p>
+                <b>Método de pago:</b><br />
+                {{var paymentMethod}}
+            </p>
+            <p>
+                <b>Fecha y hora:</b><br />
+                {{var dateAndTime}}
+            </p>
+        </td>
+    </tr>
     </tbody>
 </table>
