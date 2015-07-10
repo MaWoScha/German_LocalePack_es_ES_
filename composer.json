@@ -83,6 +83,7 @@
       ["./app/locale/es_ES/template/email/html", "./app/locale/es_ES/template/email/html"],
       ["./app/locale/es_ES/template/email/html/footer.html", "./app/locale/es_ES/template/email/html/footer.html"],
       ["./app/locale/es_ES/template/email/html/header.html", "./app/locale/es_ES/template/email/html/header.html"],
+      ["./app/locale/es_ES/template/email/html/support.html", "./app/locale/es_ES/template/email/html/support.html"],
       ["./app/locale/de_DE/German_LocaleEs.csv", "./app/locale/de_DE/German_LocaleEs.csv"],
       ["./app/locale/en_US/German_LocaleEs.csv", "./app/locale/en_US/German_LocaleEs.csv"],
       ["./app/locale/es_ES/German_LocaleEs.csv", "./app/locale/es_ES/German_LocaleEs.csv"],
