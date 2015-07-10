@@ -1,11 +1,10 @@
-<!--@subject Welcome, {{var customer.name}}! @-->
+<!--@subject Bienvenido, {{var customer.name}}! @-->
 <!--@vars
 {"store url=\"\"":"Store Url",
 "var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
 "htmlescape var=$customer.name":"Customer Name",
-"store url=\"customer/account/\"":"Customer Account Url",
-"var customer.email":"Customer Email",
-"htmlescape var=$customer.password":"Customer Password"}
+"store url=\"customer/account/\"":"Customer Account Url"}
 @-->
 
 <!--@styles
@@ -19,20 +18,15 @@
         <td class="action-content">
             <h1>{{block type="cms/block" block_id="email_template_say_hello"}} {{htmlescape var=$customer.name}}</h1>
             <p>Bienvenido/a a {{var store.getFrontendName()}}.</p>
-            <p>Para iniciar sesión al visitar nuestra web, sólo tiene que hacer clic en <a href="{{store url="customer/account/"}}">Iniciar sesión</a> o en <a href="{{store url="customer/account/"}}">Mi cuenta</a> en la parte superior de cada página e introducir su dirección de correo electrónico y contraseña.</p>
-            <p class="highlighted-text">
-                Use los siguientes valores cuando se le pida iniciar sesión:<br/>
-                <strong>Correo electrónico</strong>: {{var customer.email}}<br/>
-                <strong>Contraseña</strong>: {{htmlescape var=$customer.password}}
-            </p>
-            <p>Cuando inicie sesión con su cuenta, podrá hacer lo siguiente:</p>
+            <p>Para iniciar una sesión al visitar nuestro sitio web, simplemente tiene que hacer clic en <a href="{{store url="customer/account/"}}">Iniciar sesión</a> o en <a href="{{store url="customer/account/"}}">Mi cuenta</a> en la parte superior de cada página e introducir su dirección de correo electrónico y contraseña.</p>
+            <p>Cuando inicie una sesión con su cuenta, podrá hacer lo siguiente:</p>
             <ul>
-                <li>Pasar por caja más rápido al realizar una compra</li>
-                <li>Comprobar el estado de los pedidos</li>
+                <li>Pasar por el proceso de pago más rápido al realizar una compra</li>
+                <li>Comprobar el estado de sus pedidos</li>
                 <li>Ver pedidos anteriores</li>
                 <li>Realizar cambios en la información de su cuenta</li>
                 <li>Cambiar su contraseña</li>
-                <li>Guardar direcciones alternativas (¡para envíos a diferentes familiares y amigos!)</li>
+                <li>Guardar direcciones alternativas (¡para envíos a sus clientes y sucursales!)</li>
             </ul>
             <p>
                 {{block type="cms/block" block_id="email_template_contact"}}

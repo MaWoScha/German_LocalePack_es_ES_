@@ -1,13 +1,12 @@
-<!--@subject Account confirmation for {{var customer.name}} @-->
+<!--@subject Confirmación de cuenta para {{var customer.name}} @-->
 <!--@vars
 {"store url=\"\"":"Store Url",
 "var logo_url":"Email Logo Image Url",
 "var logo_alt":"Email Logo Image Alt",
-"store url=\"customer/account/\"":"Customer Account Url",
 "htmlescape var=$customer.name":"Customer Name",
+"store url=\"customer/account/\"":"Customer Account Url",
 "var customer.email":"Customer Email",
-"store url=\"customer/account/confirm/\" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url":"Confirmation Url",
-"htmlescape var=$customer.password":"Customer password"}
+"store url=\"customer/account/confirm/\" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url":"Confirmation Url"}
 @-->
 
 <!--@styles
@@ -18,32 +17,20 @@
 
 <table cellpadding="0" cellspacing="0" border="0">
     <tr>
-        <td>
-            <table cellpadding="0" cellspacing="0" border="0">
+        <td class="action-content">
+            <h1>{{block type="cms/block" block_id="email_template_say_hello"}} {{htmlescape var=$customer.name}}</h1>
+            <p>Tendrá que confirmar su dirección de correo electrónico {{var customer.email}} antes de poder usarlo para iniciar sesión en nuestra tienda.</p>
+            <p>Clic acá para confirmar la dirección de correo electrónico e iniciar sesión de forma instantánea (el enlace puede usarse sólo una vez):</p>
+            <table cellspacing="0" cellpadding="0" class="action-button">
                 <tr>
-                    <td class="action-content">
-                        <h1>{{block type="cms/block" block_id="email_template_say_hello"}} {{htmlescape var=$customer.name}}</h1>
-                        <p>Deberá confirmar su dirección de correo electrónico {{var customer.email}} antes de poder usarlo para iniciar sesión en nuestra tienda.</p>
-                        <p class="highlighted-text">
-                            Use los siguientes valores cuando se le pida iniciar sesión:<br/>
-                            <strong>Correo electrónico:</strong> {{var customer.email}}<br/>
-                            <strong>Contraseña:</strong> {{htmlescape var=$customer.password}}
-                        </p>
-                        <p>Para confirmar la dirección de correo electrónico e iniciar sesión de forma instantánea, use:</p>
-                        <table cellspacing="0" cellpadding="0" class="action-button" >
-                            <tr>
-                                <td>
-                                    <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}"><span>Confirm Account</span></a>
-                                </td>
-                            </tr>
-                        </table>
-                        <p>Dicho enlace sólo podrá usarse una vez.</p>
-                        <p>
-                            {{block type="cms/block" block_id="email_template_contact"}}
-                        </p>
+                    <td>
+                        <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}"><span>Confirmar la cuenta</span></a>
                     </td>
                 </tr>
             </table>
+            <p>
+                {{block type="cms/block" block_id="email_template_contact"}}
+            </p>
         </td>
     </tr>
 </table>
